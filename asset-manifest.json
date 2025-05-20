@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/harvestwealth-nigeria-limited/static/css/main.11ec3f15.css",
-    "main.js": "/harvestwealth-nigeria-limited/static/js/main.1cb04f45.js",
+    "main.js": "/harvestwealth-nigeria-limited/static/js/main.63fc3b96.js",
     "static/media/con2.jpg": "/harvestwealth-nigeria-limited/static/media/con2.cc508db1b287d7b037ff.jpg",
     "static/media/spa6.JPG": "/harvestwealth-nigeria-limited/static/media/spa6.65e69aaca6073609b394.JPG",
     "static/media/spa7.JPG": "/harvestwealth-nigeria-limited/static/media/spa7.6e2a4c863936e8b29e77.JPG",
@@ -56,10 +56,10 @@
     "static/media/logo_1.PNG": "/harvestwealth-nigeria-limited/static/media/logo_1.60fbeee9820fa812685e.PNG",
     "index.html": "/harvestwealth-nigeria-limited/index.html",
     "main.11ec3f15.css.map": "/harvestwealth-nigeria-limited/static/css/main.11ec3f15.css.map",
-    "main.1cb04f45.js.map": "/harvestwealth-nigeria-limited/static/js/main.1cb04f45.js.map"
+    "main.63fc3b96.js.map": "/harvestwealth-nigeria-limited/static/js/main.63fc3b96.js.map"
   },
   "entrypoints": [
     "static/css/main.11ec3f15.css",
-    "static/js/main.1cb04f45.js"
+    "static/js/main.63fc3b96.js"
   ]
 }
