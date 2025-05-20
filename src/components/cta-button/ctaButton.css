@@ -1,0 +1,72 @@
+
+
+  .cta-button {
+    border: none;
+    background-color: #2e6f95;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    gap: 15px;
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .cta-button-link{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-optical-sizing: auto;
+  }
+  
+  .cta-button:hover {
+    background-color: #2e6f95d2;
+    color: #fff;
+  }
+  
+  .cta-button:active {
+    background-color: #1c262b;
+  }
+  
+  .cta-button:focus {
+    background-color: #0b7dda;
+  }
+  
+  .cta-button:disabled {
+    background-color: #b7b7b7;
+    cursor: not-allowed;
+  }
+  
+  .cta-button:disabled:hover {
+    background-color: #b7b7b7;
+  }
+  
+  .cta-button:disabled:active {
+    background-color: #b7b7b7;
+  }
+  
+  .cta-button:disabled:focus {
+    background-color: #b7b7b7;
+  }
+  
+  .cta-button a {
+    text-decoration: none;
+    
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+   
+  
+    .cta-button {
+      width: 120px; /* Make the button take full width */
+      height: 40px;
+    }
+  }

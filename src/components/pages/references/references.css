@@ -1,0 +1,54 @@
+.references-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.references-container h2 {
+  font-size: 1.5rem;
+  color: #2b3a41;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%; /* Lock the image to the width of the card */
+  height: 300px; /* Increase the fixed height for the images */
+  object-fit:contain; /* Ensure the images cover the area without distortion */
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+  }
+ 
+}

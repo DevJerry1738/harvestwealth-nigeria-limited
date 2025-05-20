@@ -1,0 +1,65 @@
+.partners {
+  padding: 30px 10px;
+  background: #f9f9f9;
+  width: 100%;
+  color: #2b3a41;
+  text-align: center;
+}
+
+.partner-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.partners p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.partner-img-container {
+  overflow: hidden; /* Hide overflowing images */
+  width: 100%;
+  position: relative;
+}
+
+.partner-img {
+  display: flex;
+  gap: 20px; /* Space between images */
+  animation: scroll 40s linear infinite; /* Continuous scrolling animation with reduced speed */
+}
+
+.partner-img img {
+  height: 100px; /* Adjust the height of the images */
+  object-fit: contain; /* Ensure images maintain their aspect ratio */
+}
+
+/* Keyframes for the seamless scrolling animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  to {
+    transform: translateX(-50%); /* Move halfway (since images are duplicated) */
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .partners {
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+
+  .partner-img {
+    animation: scroll 60s linear infinite; /* Slower scrolling for smaller screens */
+  }
+
+  .partner-img img {
+    width: 80px; /* Adjust image size for smaller screens */
+  }
+
+  .partner-header {
+    font-size: 1.5rem;
+  }
+}
