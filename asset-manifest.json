@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/harvestwealth-nigeria-limited/static/css/main.ed06b66a.css",
-    "main.js": "/harvestwealth-nigeria-limited/static/js/main.ab2474ca.js",
+    "main.css": "/harvestwealth-nigeria-limited/static/css/main.c57b5a2d.css",
+    "main.js": "/harvestwealth-nigeria-limited/static/js/main.1099037f.js",
     "static/media/con2.jpg": "/harvestwealth-nigeria-limited/static/media/con2.cc508db1b287d7b037ff.jpg",
     "static/media/spa6.JPG": "/harvestwealth-nigeria-limited/static/media/spa6.65e69aaca6073609b394.JPG",
     "static/media/spa7.JPG": "/harvestwealth-nigeria-limited/static/media/spa7.6e2a4c863936e8b29e77.JPG",
@@ -55,11 +55,11 @@
     "static/media/con17.jpg": "/harvestwealth-nigeria-limited/static/media/con17.bffe24d60f041ce747f8.jpg",
     "static/media/logo_1.PNG": "/harvestwealth-nigeria-limited/static/media/logo_1.60fbeee9820fa812685e.PNG",
     "index.html": "/harvestwealth-nigeria-limited/index.html",
-    "main.ed06b66a.css.map": "/harvestwealth-nigeria-limited/static/css/main.ed06b66a.css.map",
-    "main.ab2474ca.js.map": "/harvestwealth-nigeria-limited/static/js/main.ab2474ca.js.map"
+    "main.c57b5a2d.css.map": "/harvestwealth-nigeria-limited/static/css/main.c57b5a2d.css.map",
+    "main.1099037f.js.map": "/harvestwealth-nigeria-limited/static/js/main.1099037f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed06b66a.css",
-    "static/js/main.ab2474ca.js"
+    "static/css/main.c57b5a2d.css",
+    "static/js/main.1099037f.js"
   ]
 }
