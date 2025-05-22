@@ -4,7 +4,6 @@ import home_1 from '../../../assets/images/home_1.jpg';
 import home_2 from '../../../assets/images/home_2.jpg';
 import home_3 from '../../../assets/images/home_3.jpg';
 import home_4 from '../../../assets/images/home_4.jpg';
-import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CtaButton from '../../cta-button/ctaButton'
 import Partners from '../../partners/partners'

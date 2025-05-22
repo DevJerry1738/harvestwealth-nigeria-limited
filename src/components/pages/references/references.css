@@ -8,7 +8,7 @@
 }
 
 .references-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #2b3a41;
   margin-bottom: 20px;
   text-align: center;
@@ -48,7 +48,11 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .cards-container {
-    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 10px; /* Reduce gap between cards */
+    justify-content: center; /* Center cards */
+    align-items: center; /* Center cards horizontally */
   }
  
 }

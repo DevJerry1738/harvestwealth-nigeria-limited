@@ -1,32 +1,42 @@
 .partners {
-  padding: 30px 10px;
+ 
   background: #f9f9f9;
   width: 100%;
-  color: #2b3a41;
+  color: #003366;
   text-align: center;
 }
 
 .partner-header {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  color: #003366;
   margin-bottom: 20px;
+  text-align: left; /* Align header text to the left */
+}
+
+.partner-header span {
+  color: #dda44e; /* Highlighted text color */
 }
 
 .partners p {
-  color: #555;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: #444; /* Text color */
+  text-align: left; /* Align paragraph text to the left */
 }
 
 .partner-img-container {
   overflow: hidden; /* Hide overflowing images */
-  width: 100%;
+  width: 90%;
   position: relative;
+  margin: 0 auto; /* Center the container */
+  padding: 10px 0; /* Add padding to the top and bottom */
 }
 
 .partner-img {
   display: flex;
   gap: 20px; /* Space between images */
-  animation: scroll 40s linear infinite; /* Continuous scrolling animation with reduced speed */
+  animation: scroll 20s linear infinite; /* Continuous scrolling animation with reduced speed */
 }
 
 .partner-img img {
@@ -40,19 +50,26 @@
     transform: translateX(0); /* Start at the initial position */
   }
   to {
-    transform: translateX(-50%); /* Move halfway (since images are duplicated) */
+    transform: translateX(
+      -50%
+    ); /* Move halfway (since images are duplicated) */
   }
 }
 
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
   .partners {
-    padding: 0 5px;
-    margin-bottom: 10px;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+    
+    text-align: left;
+  }
+  .partner-text{
+    display: none;
   }
 
   .partner-img {
-    animation: scroll 60s linear infinite; /* Slower scrolling for smaller screens */
+    animation: scroll 10s linear infinite; /* Slower scrolling for smaller screens */
   }
 
   .partner-img img {
@@ -61,5 +78,11 @@
 
   .partner-header {
     font-size: 1.5rem;
+    text-align: left; /* Align header text to the left */
+  }
+
+  .partners p {
+    font-size: 1rem;
+    text-align: left; /* Align paragraph text to the left */
   }
 }

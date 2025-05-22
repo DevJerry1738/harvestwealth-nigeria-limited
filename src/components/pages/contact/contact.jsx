@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css';
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import { LuInstagram } from 'react-icons/lu';
+import { FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
@@ -49,20 +48,15 @@ export default function Contact() {
                         Nissi Village,<br /> Kaduna State, Nigeria
                     </p>
                     <p>Phone Numbers: +234 802 315 1671</p>
-                    <p>Email: marcng@yahoo.com</p>
+                    <p>Email: enquiry@harvestwealthltd.com</p>
                     <div className='socials'>
                         <a href="https://www.facebook.com/harvestwealthng" target="_blank" rel="noreferrer">
                             <FaFacebookF />
                         </a>
                         <a href="https://www.instagram.com/harvestwealthng" target="_blank" rel="noreferrer">
-                            <LuInstagram />
+                            <FaWhatsapp />
                         </a>
-                        <a href="https://www.linkedin.com/company/harvestwealthng" target="_blank" rel="noreferrer">
-                            <FaLinkedinIn />
-                        </a>
-                        <a href="https://www.twitter.com/harvestwealthng" target="_blank" rel="noreferrer">
-                            <FaTwitter />
-                        </a>
+                        
                     </div>
                 </div>
                 <form onSubmit={handleSubmit}>

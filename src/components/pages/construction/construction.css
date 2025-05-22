@@ -1,28 +1,82 @@
 .construction-container {
-    background-color: #f9f9f9;
-    padding: 0 20%;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 10%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.8;
+}
+.construction-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+}
+
+
+.construction-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #003366;
+}
+.construction-container h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #003366;
+}
+
+.construction-container p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #444;
+}
+
+.construction-container ol {
+  font-size: 1.1rem; /* Adjust font size for ordered lists */
+  color: #333; /* Darker text color */
+  margin-left: 20px; /* Add left margin for better spacing */
+  line-height: 1.8; /* Match paragraph line height */
+}
+
+
+
+/* Responsive Design for Medium and Smaller Screens */
+@media screen and (max-width: 1024px) {
+  .construction-container {
+    padding: 20px 5%; /* Reduce padding for medium screens */
+  }
+
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .construction-container {
+    padding: 20px 5%; /* Further reduce padding for smaller screens */
+  }
+
+  .construction-portfolio {
+    flex-direction: column; /* Stack cards in a column */
+    align-items: center; /* Center the cards horizontally */
+    gap: 20px; /* Add space between stacked cards */
   }
   
+
   .construction-container h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.6rem; /* Adjust heading size for smaller screens */
   }
-  
+
   .construction-container p {
-    text-align: justify;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    font-size: 20px;
+    font-size: 1rem; /* Adjust paragraph font size for smaller screens */
   }
-  
-  .construction-container ol{
-    font-size: 20px;
-    color: #333;
+
+  .construction-container ol {
+    font-size: 1rem; /* Adjust list font size for smaller screens */
   }
-  
+}

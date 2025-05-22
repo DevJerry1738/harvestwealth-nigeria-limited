@@ -10,19 +10,18 @@ import customer5 from '../../../assets/images/customers/customer5.PNG'
 
 export default function References() {
   const customers = [
-    // { name: 'CBN B/ Kebbi Complex', src: customer1 },
-    { name: 'Federal Ministry of Women Affairs New HQ' , src: customer2 ,text:'powered by Harvestwealth Nig Ltd Switchgears'}, ,
+   
+    { name: 'Federal Ministry of Women Affairs New HQ' , src: customer2 ,text:'powered by Harvestwealth Nig Ltd Switchgears'}, 
     { name: 'CBN Dutse, Jigawa State ',  src: customer3, text:'powered by Harvestwealth Nig Ltd Switchgears'},
     { name: 'The Wells Carlton Hotel, Asokoro, Abuja',  src: customer4 ,text:'powered by Harvestwealth Nig Ltd Switchgears'},
     { name: '7.5MVA Electrical Power Infrastructure at Barracks road, Jimeta, Yola', src: customer5,text:'built by Harvestwealth Nig Ltd '},
-    // { name: 'NIPP-NDPHC, Jimeta, Yola',  src: customer6 },
-    // { name: 'Wells Carlton Hotel, Abuja',  src: customer7 },
+
 
   ];
 
   return (
     <div className='references-container'>
-      <h2>OUR CUSTOMER BASE</h2>
+      <h2>Our Customer Base</h2>
       <div className='cards-container'>
         {customers.map((customer, index) => (
           <div key={index} className='card'>

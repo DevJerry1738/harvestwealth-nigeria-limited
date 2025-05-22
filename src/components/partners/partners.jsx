@@ -12,10 +12,13 @@ export default function Partners() {
   const images = [partner1, partner2, partner3, partner4, partner5, partner6, partner7];
   return (
     <div className="partners">
+      <div className="partner-text">
       <h2 className="partner-header">Our Partners</h2>
       <p>
         Authorized partners with Schneider Electric, Lucy Electric, ABB, Conco SA, ANERN Solar Systems, Chint Electric, Himel, MPI, etc.
       </p>
+      </div>
+      
       <div className="partner-img-container">
         <div className="partner-img">
           {images.map((image, index) => (

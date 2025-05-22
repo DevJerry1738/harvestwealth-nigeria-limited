@@ -5,24 +5,36 @@
   height: 100vh;
   justify-content: center;
   
-  
+}
+.epc-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 60vh;
 }
 
 .epc h2 {
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  color: #003366;
 }
 
 .epc p {
+  font-size: 18px;
   text-align: center;
-  color: #555;
-  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #444;
 }
 .card-section {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
   gap: 20px; /* Add some space between the cards */
   margin-top: 20px;
  
@@ -60,14 +72,59 @@
   font-size: 1rem;
   color: white;
 }
+/* Styles for medium screens (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .epc {
+    padding: 10px 10%; /* Reduce side padding for medium screens */
+    height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .epc h2 {
+    font-size: 2rem; /* Slightly smaller font size for medium screens */
+    margin-bottom: 15px;
+  }
+
+  .epc p {
+    font-size: 1.1rem; /* Adjust paragraph font size */
+    margin-bottom: 30px;
+  }
+
+  .card-section {
+    flex-direction: row; /* Keep cards in a row */
+    align-items: center; /* Center align cards */
+    justify-content: space-between; /* Adjust spacing between cards */
+    gap: 15px; /* Reduce gap between cards */
+    flex-wrap: nowrap;
+  }
+
+  .service-card {
+    width: 200px; /* Reduce card width for medium screens */
+    padding: 15px; /* Adjust padding for better spacing */
+  }
+
+  .service-card img {
+    width: 80px; /* Adjust image size for medium screens */
+    height: 80px;
+  }
+
+  .service-card p {
+    font-size: 0.9rem; /* Adjust text size for medium screens */
+  }
+
+  .card-link {
+    font-size: 0.9rem; /* Adjust link font size */
+  }
+}
 @media (max-width: 768px) {
   .epc{
     padding: 0 5%;
     height: auto;
+    margin-top: -20px;
   }
   .card-section {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   .card {

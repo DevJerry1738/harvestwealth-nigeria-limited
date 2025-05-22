@@ -8,7 +8,7 @@ import { RiArrowDropDownLine } from 'react-icons/ri';
 import Dropdown from '../dropdown/dropdown'
 
 const drawerWidth = 240;
-const navItems = ['About',  'EPC', 'SPA', 'References','Contact'];
+
 
 
 
@@ -49,27 +49,93 @@ export default function Navbar(props) {
 
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <Link
-            to={`/${item.toLowerCase()}`}
-            className="nav-link"
-            style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }} // Remove text decoration
-          >
-            <ListItem key={item} disablePadding>
-              <ListItemButton sx={{ textAlign: 'left' }}>
+        
+        <Link to={'/about'} className="nav-link"
+          style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }} // Remove text decoration
+        >
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: 'left' }}>
 
-                <ListItemText primary={item}
-                  sx={{
-                    '&:hover': {
+              <ListItemText primary={'About'}
+                sx={{
+                  '&:hover': {
 
-                      textDecoration: 'underline', // Underline on hover
-                    },
-                  }} />
+                    textDecoration: 'underline', // Underline on hover
+                  },
+                }} />
 
-              </ListItemButton>
-            </ListItem>
-          </Link>
-        ))}
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to={'/epc'} className="nav-link"
+          style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }} // Remove text decoration
+        >
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: 'left' }}>
+
+              <ListItemText primary={'EPC'}
+                sx={{
+                  '&:hover': {
+
+                    textDecoration: 'underline', // Underline on hover
+                  },
+                }} />
+
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to={'/spa'} className="nav-link"
+          style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }} // Remove text decoration
+        >
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: 'left' }}>
+
+              <ListItemText primary={'Switchgear Panel Assembly'}
+                sx={{
+                  '&:hover': {
+
+                    textDecoration: 'underline', // Underline on hover
+                  },
+                }} />
+
+            </ListItemButton>
+          </ListItem>
+          
+        </Link>
+        <Link to={'/references'} className="nav-link"
+          style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }} // Remove text decoration
+        >
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: 'left' }}>
+
+              <ListItemText primary={'References'}
+                sx={{
+                  '&:hover': {
+
+                    textDecoration: 'underline', // Underline on hover
+                  },
+                }} />
+
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to={'/contact'} className="nav-link"
+          style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }} // Remove text decoration
+        >
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: 'left' }}>
+
+              <ListItemText primary={'Contact'}
+                sx={{
+                  '&:hover': {
+
+                    textDecoration: 'underline', // Underline on hover
+                  },
+                }} />
+
+            </ListItemButton>
+          </ListItem>
+        </Link>
       </List>
     </Box>
   );
@@ -79,11 +145,12 @@ export default function Navbar(props) {
     <>
       <div className='nav'>
         <IconButton
+          className="nav-toggle"
           color="inherit"
           aria-label="open drawer"
           edge="start"
           onClick={handleDrawerToggle}
-          sx={{ mr: 2, display: { sm: 'none' }, ml: 0 }}
+          sx={{ display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' } }}
         >
           <MenuIcon sx={{ color: 'white' }} />
         </IconButton>
@@ -151,12 +218,12 @@ export default function Navbar(props) {
           }}
           disableScrollLock={true}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' }, // Show drawer for small and medium screens
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
-              backgroundColor: '#1b263b', // Match the website's theme (dark background)
-              color: 'grey', // Text color matching the theme
+              backgroundColor: '#2e6f95', // Match the website's theme (dark background)
+              color: 'white', // Text color matching the theme
             },
           }}
         >

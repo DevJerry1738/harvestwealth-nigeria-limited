@@ -1,53 +1,100 @@
 .engineering-container {
-  background-color: #f9f9f9;
-  padding: 0 20%;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Light background */
+  padding: 20px 10%; /* Adjust padding for better spacing */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .engineering-container h2 {
   text-align: center;
-  color: #333;
+  color: #003366; /* Darker heading color */
+  font-size: 2.5rem; /* Larger font size for headings */
   margin-bottom: 20px;
 }
 
 .engineering-container p {
   text-align: justify;
-  color: #555;
+  color: #444; /* Neutral text color */
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: 1.8; /* Increased line height for readability */
+  font-size: 1.1rem; /* Slightly larger font size */
 }
 
 .gallery {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center; /* Center the gallery items */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 20px; /* Space between gallery items */
+  margin-top: 20px;
 }
 
 .gallery-item {
   text-align: center;
-  flex: 1 1 calc(50% - 20px); /* Adjust to ensure 2 images per row */
-  max-width: calc(50% - 20px); /* Adjust to ensure 2 images per row */
+  flex: 1 1 calc(33.33% - 20px); /* Three images per row */
+  max-width: calc(33.33% - 20px); /* Ensure consistent width */
+  background-color: #fff; /* White background for gallery items */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px; /* Add padding inside the gallery item */
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Match the card style */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
 }
 
 .gallery-item p {
   margin-top: 10px;
-  color: #333;
+  color: #2b3a41; /* Darker text color */
   font-weight: bold;
+  font-size: 1rem; /* Adjust font size */
 }
-.carousel{
+
+.carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   max-height: 700px;
+  margin-top: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Medium and Smaller Screens */
+@media screen and (max-width: 1024px) {
+  .engineering-container {
+    padding: 20px 5%; /* Reduce padding for medium screens */
+  }
+
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px); /* Two images per row for medium screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .engineering-container {
+    padding: 20px 5%; /* Further reduce padding for smaller screens */
+  }
+
+  .gallery-item {
+    flex: 1 1 90%; /* One image per row for smaller screens */
+    max-width: 90%;
+  }
+
+  .engineering-container h2 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .engineering-container p {
+    font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+  }
 }

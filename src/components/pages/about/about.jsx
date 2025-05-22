@@ -1,33 +1,58 @@
 import React from 'react';
-import Partners from '../../partners/partners';
 import './about.css';
+import Partners from '../../partners/partners';
 
-export default function About() {
+const AboutUs = () => {
   return (
-    <div className='about-container'>
-      <h2>About Us</h2>
-      <p>
-        Harvestwealth Nig Ltd is an indigenous Engineering, Procurement and Construction (EPC) Contractor incorporated in 2002 with its head office in Kaduna and operational activities in several states across Nigeria. We are specialists in Electrical Engineering solutions that meets the power needs of our clients.
-      </p>
-      <p>
-        Our firm, in partnership with Schneider Electric and other major electrical equipment manufacturers, has been providing quality Electrical Designs, Electrical Switchgear Panels Assembly, and Electrical Power Construction (On and Off grid Power solutions) for our clients.
-      </p>
-      <h3>Our Vision</h3>
-      <p>
-        We are guided by our vision of “aspiring to be a strong, dependable and one of the best energy service providers in Nigeria”.
-      </p>
-      <h3>Our Mission</h3>
-      <p>
-        Our mission is to surpass our customer needs, give value to our stakeholders and provide an enabling environment for our workforce to realize their potentials.
-      </p>
-      <h3>Features of our Services</h3>
-      <ul className='features-list'>
-        <li>We have a comprehensive range of electrical solutions that finds applications in building, industrial, and infrastructural sectors that meets the energy needs of our clients.</li>
-        <li>Customized electrical designs.</li>
-        <li>Our products and services are reliable and safe.</li>
-        <li>Products are sourced from Original Equipment Manufacturers (OEMs).</li>
-      </ul>
-      <Partners />
-    </div>
+    <section className="about-section">
+      <div className="container">
+        {/* About Us */}
+        <div className="main-text">
+        <h2 className="section-title">About Us</h2>
+        <p className="text">
+          Harvestwealth Nig Ltd is an indigenous Engineering, Procurement, and Construction (EPC) Contractor
+          established in 2002, with headquarters in Kaduna and operations across multiple states in Nigeria.
+          We specialize in Electrical Engineering solutions tailored to meet the power demands of our clients.
+        </p>
+        <p className="text">
+          In partnership with Schneider Electric and other leading equipment manufacturers, we provide
+          high-quality Electrical Designs, Switchgear Panel Assemblies, and Power Construction services,
+          covering both on-grid and off-grid energy systems.
+        </p>
+        </div>
+        
+        {/* Mission and vision */}
+        <div className="mission-vision">
+     {/* Vision */}
+     <h3 className="sub-title">Our Vision</h3>
+        <p className="text">
+          To be a strong, dependable, and one of the best energy service providers in Nigeria.
+        </p>
+
+        {/* Mission */}
+        <h3 className="sub-title">Our Mission</h3>
+        <p className="text">
+          To exceed customer expectations, deliver value to stakeholders, and provide a supportive
+          environment where our workforce can realize their full potential.
+        </p>
+
+        </div>
+
+       
+        {/* Services */}
+        <h3 className="sub-title">Our Services</h3>
+        <ul className="service-list">
+          <li>Customized electrical design and consulting.</li>
+          <li>Reliable and safe electrical installations.</li>
+          <li>Original Equipment Manufacturer (OEM) certified products.</li>
+          <li>Solutions for residential, industrial, and infrastructure projects.</li>
+        </ul>
+
+        {/* Partners */}
+       <Partners/>
+      </div>
+    </section>
   );
-}
+};
+
+export default AboutUs;
