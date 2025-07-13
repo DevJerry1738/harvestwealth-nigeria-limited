@@ -87,6 +87,23 @@
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  .dropdown {
+    position: static !important;
+    display: block;
+    width: 100%;
+    background: #fff;
+    box-shadow: none;
+    margin-left: 1rem;
+  }
+
+  .dropdown a {
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .nav {
     flex-direction: column;

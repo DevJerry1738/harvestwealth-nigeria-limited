@@ -45,38 +45,38 @@ export default function Navbar() {
 
       {/* Navigation Items */}
       <div className={`navbar-items ${mobileOpen ? 'open' : ''}`}>
-        <ul onClick={closeMobileMenu} className='nav-links'>
+        <ul  className='nav-links'>
           <li>
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+            <NavLink onClick={closeMobileMenu} to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+            <NavLink onClick={closeMobileMenu} to="/about" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
               About
             </NavLink>
           </li>
           <li
-            className="dropdown-nav"
-            onMouseEnter={() => window.innerWidth > 1024 && setDropdown(true)}
-            onMouseLeave={() => window.innerWidth > 1024 && setDropdown(false)}
-            onClick={handleDropdownToggle}
-          >
-            <div
-              className="nav-link dropdown-toggle"
-              onClick={handleDropdownToggle}
-            >
-              Products & Services <RiArrowDropDownLine />
-            </div>
-            {dropdown && <Dropdown onClick={closeMobileMenu} />}
-          </li>
+  className="dropdown-nav"
+  onMouseEnter={() => window.innerWidth > 1024 && setDropdown(true)}
+  onMouseLeave={() => window.innerWidth > 1024 && setDropdown(false)}
+>
+  <div
+    className="nav-link dropdown-toggle"
+    onClick={() => setDropdown((prev) => !prev)} // Only here now
+  >
+    Products & Services <RiArrowDropDownLine />
+  </div>
+
+  {dropdown && <Dropdown onClick={closeMobileMenu} />}
+</li>
           <li>
-            <NavLink to="/references" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+            <NavLink onClick={closeMobileMenu} to="/references" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
               Customer References
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+            <NavLink onClick={closeMobileMenu} to="/contact" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
               Contact Us
             </NavLink>
           </li>
