@@ -1,170 +1,130 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%; /* Ensure the navbar always takes the full width */
-  background-color: #edf2f4;
-  
-  box-sizing: border-box; 
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example shadow value */
-}
-
-.logo {
-  height: 60px;
-}
-
-.nav .title {
-  margin-left: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 26px;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.nav ul {
-  display: flex;
-  list-style: none;
-}
-
-.nav ul li {
-  list-style: none;
-}
-
-.nav ul li a {
-  display: block;
-  text-decoration: none;
-  color: #0f4c5c;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  border-radius: 0.5rem;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.nav ul li a:hover {
-  
-}
-
-.home-link {
-  color: white;
-  text-decoration: none;
-}
-
-.home-link:hover {
-  text-decoration: underline;
-}
-
-.nav-items {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  flex-grow: 1;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.header-logo p{
-  font-size: 16px;
-  color: #ABB2BF;
-  margin: 0;
+  background-color: #fff;
+  color: #2b3a41;
+  min-height: 100px; 
+ font: 'Roboto', sans-serif;
+ font-weight: 600;
+ display: flex;
 }
 
 .logo-area {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  background-color: #2e6f95;
-  padding: 10px 20px;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  gap: 20px;
+  
+  padding: 10px;
+
 }
 
-.logo-img {
-  
-  height: 60px;
-  padding-right: 10px;
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.header-logo img {
+  height: 100px; /* Adjust this value as needed for your logo */
+  width: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+.mobile-toggle {
+  background: #2b3a41;
+  border: none;
+  margin-top: 0.5rem;
+  display: none;
 }
 
 .navbar-items {
-  margin: 0px auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 60%;
+  align-items: center;
+  
 }
-.nav-link {
-  text-decoration: none;
-  color: #0f4c5c; /* Default link color */
-  text-align: center;
-}
-.dropdown-nav{
-  align-content: center;
-}
-.ecp-services{
-  text-decoration: none;
-  color: #0f4c5c; /* Default link color */
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 400;
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem;
   align-items: center;
 }
 
-.nav-link.active {
-  text-decoration: underline; /* Active link color */
+.navbar-items ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
 }
 
+.navbar-items li {
+  margin: 0.5rem 0;
+}
+
+.nav-link {
+  color: #2b3a41;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-link.active,
 .nav-link:hover {
-  text-decoration: underline; /* Underline on hover */
+  font-weight: 600;
 }
 
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
+.dropdown-nav {
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
   .nav {
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    background-color: #2e6f95;
-  }
-
-  .nav-items {
-    display: none; /* Hide nav items by default */
     flex-direction: column;
-    background-color: #2b3a41;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
+    align-items: flex-start;
   }
 
-  .nav-items.active {
-    display: flex; /* Show nav items when active */
+  .mobile-toggle {
+    display: block;
+    align-self: flex-end;
+    margin: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
   }
-  .header-logo{
+
+  .navbar-items {
     display: none;
+    width: 100%;
+    padding: 0 1rem;
   }
 
-  .nav .title {
-    font-size: 16px;
-    text-align: center;
-    margin: 0 auto;
+  .navbar-items.open {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    text-align: left;
+    display: block;
     width: 100%;
   }
-
-  .logo-img {
-    width: 30px;
-    height: 30px;
-  }
-.logo-area{
-  flex-direction: row;
-}
 }

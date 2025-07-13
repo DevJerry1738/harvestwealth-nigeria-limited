@@ -1,14 +1,14 @@
 .partners {
  
-  background: #f9f9f9;
+  background: #fff;
   width: 100%;
-  color: #003366;
+  color: #2b3a41;
   text-align: center;
 }
 
 .partner-header {
-  font-size: 2.5rem;
-  color: #003366;
+  font-size: 2rem;
+  color: #2b3a41;
   margin-bottom: 20px;
   text-align: left; /* Align header text to the left */
 }
@@ -18,7 +18,7 @@
 }
 
 .partners p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 16px;
   color: #444; /* Text color */
@@ -27,7 +27,7 @@
 
 .partner-img-container {
   overflow: hidden; /* Hide overflowing images */
-  width: 90%;
+  width: 100%;
   position: relative;
   margin: 0 auto; /* Center the container */
   padding: 10px 0; /* Add padding to the top and bottom */
@@ -62,10 +62,10 @@
     width: 100%;
     margin: 0 auto; /* Center the container */
     
-    text-align: left;
+    text-align: center;
   }
   .partner-text{
-    display: none;
+  
   }
 
   .partner-img {
@@ -77,12 +77,12 @@
   }
 
   .partner-header {
-    font-size: 1.5rem;
-    text-align: left; /* Align header text to the left */
+    font-size: 1.4rem;
+    text-align: center; /* Align header text to the center */
   }
 
   .partners p {
     font-size: 1rem;
-    text-align: left; /* Align paragraph text to the left */
+    text-align: center; /* Align paragraph text to the center */
   }
 }

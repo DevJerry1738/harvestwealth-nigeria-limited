@@ -16,7 +16,7 @@ export default function Epc() {
     <div className='epc'>
       <div className="epc-text">
         <h2>ENGINEERING, PROCUREMENT AND CONSTRUCTION SERVICES</h2>
-        <p>At Harvestwealt Nigeria Limited, we offer high quality Engineering Solutions, Procurement services and Construction works. Our team consists of experienced professionals working together to provide expert services that meets our clients needs.</p>
+        <p>At Harvestwealth Nigeria Limited, we offer high quality Engineering Solutions, Procurement services and Construction works. Our team consists of experienced professionals working together to provide expert services that meets our clients needs.</p>
       </div>
 
       <div className="card-section">

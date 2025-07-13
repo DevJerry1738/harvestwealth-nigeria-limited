@@ -1,23 +1,23 @@
 .engineering-container {
-  background-color: #f9f9f9; /* Light background */
+  background-color: #fff; /* Light background */
   padding: 20px 10%; /* Adjust padding for better spacing */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .engineering-container h2 {
-  text-align: center;
-  color: #003366; /* Darker heading color */
-  font-size: 2.5rem; /* Larger font size for headings */
+  text-align: left;
+  color: #2b3a41; /* Darker heading color */
+  font-size: 2rem; /* Larger font size for headings */
   margin-bottom: 20px;
 }
 
 .engineering-container p {
-  text-align: justify;
-  color: #444; /* Neutral text color */
+  text-align: left;
+  color: #2b3a41; /* Neutral text color */
   margin-bottom: 20px;
   line-height: 1.8; /* Increased line height for readability */
-  font-size: 1.1rem; /* Slightly larger font size */
+  font-size: 1rem; /* Slightly larger font size */
 }
 
 .gallery {
@@ -83,6 +83,7 @@
 @media screen and (max-width: 768px) {
   .engineering-container {
     padding: 20px 5%; /* Further reduce padding for smaller screens */
+    height: 100vh;
   }
 
   .gallery-item {

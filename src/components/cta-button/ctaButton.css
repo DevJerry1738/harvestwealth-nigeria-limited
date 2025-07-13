@@ -2,20 +2,27 @@
 
   .cta-button {
     border: none;
-    background-color: #2e6f95;
-    color: white;
     text-align: center;
     font-size: 16px;
     font-style: normal;
     gap: 15px;
-    width: 160px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     
+  }
+
+  .cta-button--primary{
+ background-color: #68b089;
+    color: white;
+  }
+  .cta-button--secondary{
+ background-color: #2e6f95;
+    color: white;
   }
   .cta-button-link{
     text-decoration: none;

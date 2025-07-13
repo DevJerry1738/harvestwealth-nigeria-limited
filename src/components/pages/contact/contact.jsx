@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './contact.css';
 import { FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -20,24 +22,39 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-        emailjs.sendForm('service_favvzrq', 'template_tz4mw5i', e.target, 'TLXn4ZdVecoCHri_u')
-        .then((result) => {
-          console.log('Email successfully sent!', result.text);
-        }, (error) => {
-          console.log('Failed to send email.', error.text);
-        });
+    
+        emailjs
+            .sendForm('service_favvzrq', 'template_tz4mw5i', e.target, 'TLXn4ZdVecoCHri_u')
+            .then(
+                (result) => {
+                    console.log('Email successfully sent!', result.text);
+                    toast.success('Email sent successfully!', {
+                        position: 'top-center',
+                        autoClose: 3000, // Auto close after 3 seconds
+                    });
+                },
+                (error) => {
+                    console.log('Failed to send email.', error.text);
+                    toast.error('Failed to send email. Please try again.', {
+                        position: 'top-center',
+                        autoClose: 3000,
+                    });
+                }
+            );
+    
         setFormData({
             name: '',
             email: '',
             message: ''
-          });
-
+        });
+    
         console.log('Form data submitted:', formData);
     };
 
     return (
         <div className='contact-container'>
+            {/* Toast Container */}
+            <ToastContainer />
 
             <div className="contact-area">
                 <div className='contact-info'>
@@ -56,7 +73,6 @@ export default function Contact() {
                         <a href="https://www.instagram.com/harvestwealthng" target="_blank" rel="noreferrer">
                             <FaWhatsapp />
                         </a>
-                        
                     </div>
                 </div>
                 <form onSubmit={handleSubmit}>
